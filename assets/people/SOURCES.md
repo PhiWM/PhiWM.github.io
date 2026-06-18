@@ -10,7 +10,7 @@ Each local portrait image in this folder is an optimized copy generated from the
 | Runyi Yang | assets/people/runyi-yang.jpg | https://insait.ai/runyi-yang/ | https://insait.ai/wp-content/uploads/2024/04/Runyi_Yang.jpeg |
 | Giuliano Albanese | assets/people/giuliano-albanese.jpg | https://insait.ai/giuliano-albanese/ | https://insait.ai/wp-content/uploads/2024/08/IMG_5836-scaled.jpg |
 | Nicole Damblon | assets/people/nicole-damblon.jpg | https://cvg.ethz.ch/our_team | https://cvg.ethz.ch/assets/images/team/Phd-Students/NicoleDamblon.jpeg |
-| Kunyu Peng | assets/people/kunyu-peng.jpg | https://insait.ai/dr-ing-kunyu-peng/ | https://insait.ai/wp-content/uploads/2025/10/pky_photo-scaled.jpg |
+| Kunyu Peng | assets/people/kunyu-peng.jpg | https://cvhci.iar.kit.edu/people_2123.php | https://insait.ai/wp-content/uploads/2025/10/pky_photo-scaled.jpg |
 | Xin Kong | assets/people/xin-kong.jpg | https://research.nvidia.com/person/xin-kong | https://research.nvidia.com/sites/default/files/person/Xin-photo.jpg |
 | Rainer Stiefelhagen | assets/people/rainer-stiefelhagen.jpg | https://www.access.kit.edu/english/287_1072.php | https://www.access.kit.edu/img/content/Rainer_20190117-CN-02-324_460Pixel_rdax_230x176p.jpg |
 | Yiming Li | assets/people/yiming-li.jpg | https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Yiming_Li.htm | https://yimingli-page.github.io/files/profile.png |
