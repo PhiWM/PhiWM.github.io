@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc">
+  <title id="title">Physical world model diagram</title>
+  <desc id="desc">Abstract robot arm, object graph, sensor signals, and predicted physical trajectories.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#071019"/>
+      <stop offset="0.55" stop-color="#0d2131"/>
+      <stop offset="1" stop-color="#122d3d"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#23b7ff"/>
+      <stop offset="1" stop-color="#79f2c0"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#b29dff"/>
+      <stop offset="1" stop-color="#23b7ff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="640" rx="34" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#fff" stroke-width="1">
+    <path d="M0 520h900M0 460h900M0 400h900M0 340h900M0 280h900M0 220h900M0 160h900M0 100h900"/>
+    <path d="M80 0v640M160 0v640M240 0v640M320 0v640M400 0v640M480 0v640M560 0v640M640 0v640M720 0v640M800 0v640"/>
+  </g>
+  <g opacity="0.2" fill="none" stroke="#79f2c0" stroke-width="2">
+    <path d="M84 488C185 394 269 533 388 415S606 198 813 270"/>
+    <path d="M80 418C210 330 291 402 390 305S590 182 818 174"/>
+  </g>
+  <g transform="translate(110 350)" filter="url(#glow)">
+    <path d="M0 112h230" stroke="url(#cyan)" stroke-width="16" stroke-linecap="round" opacity="0.9"/>
+    <circle cx="58" cy="112" r="34" fill="#0a1720" stroke="url(#cyan)" stroke-width="8"/>
+    <path d="M58 112 154 38" stroke="url(#cyan)" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="154" cy="38" r="26" fill="#0a1720" stroke="url(#cyan)" stroke-width="8"/>
+    <path d="M154 38 286 78" stroke="url(#cyan)" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="286" cy="78" r="22" fill="#0a1720" stroke="url(#cyan)" stroke-width="7"/>
+    <path d="M286 78l54-34M286 78l58 30" stroke="url(#cyan)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(520 240)">
+    <path d="M0 62 106 0l110 64-106 62z" fill="rgba(35,183,255,0.22)" stroke="#23b7ff" stroke-width="2"/>
+    <path d="M0 62v126l110 64V126z" fill="rgba(121,242,192,0.12)" stroke="#79f2c0" stroke-width="2"/>
+    <path d="M216 64v126l-106 62V126z" fill="rgba(178,157,255,0.18)" stroke="#b29dff" stroke-width="2"/>
+    <path d="M0 62 110 126 216 64M110 126v126" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+    <circle cx="108" cy="126" r="8" fill="#79f2c0"/>
+  </g>
+  <g transform="translate(590 72)" stroke-width="2.4" fill="none">
+    <circle cx="0" cy="0" r="28" fill="rgba(35,183,255,0.16)" stroke="#23b7ff"/>
+    <circle cx="126" cy="26" r="32" fill="rgba(121,242,192,0.12)" stroke="#79f2c0"/>
+    <circle cx="66" cy="112" r="26" fill="rgba(178,157,255,0.16)" stroke="#b29dff"/>
+    <path d="M27 6 94 20M116 56 82 91M52 91 15 24" stroke="rgba(255,255,255,0.55)"/>
+    <g fill="#fff" stroke="none" opacity="0.78">
+      <circle cx="0" cy="0" r="4"/><circle cx="126" cy="26" r="4"/><circle cx="66" cy="112" r="4"/>
+    </g>
+  </g>
+  <g transform="translate(116 86)">
+    <rect x="0" y="0" width="300" height="166" rx="22" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)"/>
+    <text x="24" y="42" fill="#79f2c0" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800">state = f(sensors, actions)</text>
+    <g transform="translate(24 74)" fill="none" stroke-linecap="round" stroke-width="7">
+      <path d="M0 46c32-58 58-58 84 0s55 57 86 0 55-58 82 0" stroke="#23b7ff"/>
+      <path d="M0 78c32-38 58-38 84 0s55 37 86 0 55-38 82 0" stroke="#b29dff" opacity="0.9"/>
+    </g>
+  </g>
+  <g fill="#79f2c0" opacity="0.9">
+    <circle cx="734" cy="526" r="6"/><circle cx="786" cy="500" r="4"/><circle cx="816" cy="548" r="7"/>
+    <circle cx="464" cy="188" r="5"/><circle cx="432" cy="246" r="4"/><circle cx="376" cy="292" r="6"/>
+  </g>
+</svg>

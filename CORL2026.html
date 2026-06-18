@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Physical World Modeling for Embodied Manipulation | CoRL 2026 Workshop</title>
+  <meta name="description" content="CoRL 2026 workshop on Physical World Modeling for Embodied Manipulation: physically grounded world models for robot learning, manipulation, multimodal sensing, simulation, and embodied AI." />
+  <meta name="theme-color" content="#0a1118" />
+  <meta property="og:title" content="Physical World Modeling for Embodied Manipulation" />
+  <meta property="og:description" content="A CoRL 2026 workshop on physical world models that support reliable embodied perception, prediction, planning, and robot manipulation." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="PhysicalWM home">
+        <span class="brand-mark">φWM</span>
+        <span class="brand-text">PhysicalWM</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#overview">Overview</a>
+        <a href="#topics">Topics</a>
+        <a href="#cfp">Call for Papers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#organizers">Organizers</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">CoRL 2026 Workshop · Austin, Texas</div>
+          <h1>Physical World Modeling for Embodied Manipulation</h1>
+          <p class="hero-lede">
+            Toward world models that do more than predict pixels: models that expose physically actionable state, reason about interventions, and support reliable robot behavior in contact-rich real-world environments.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#cfp">Call for Papers</a>
+            <a class="button button-secondary" href="#speakers">Invited Speakers</a>
+            <a class="button button-ghost" href="assets/physicalwm-corl2026-proposal.pdf">Proposal PDF</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Workshop facts">
+          <img src="assets/hero-physicalwm.svg" alt="Abstract diagram of physical world modeling for embodied manipulation" />
+          <div class="fact-grid">
+            <div>
+              <span class="fact-label">Date</span>
+              <strong>Nov 9, 2026</strong>
+            </div>
+            <div>
+              <span class="fact-label">Venue</span>
+              <strong>JW Marriott Austin</strong>
+            </div>
+            <div>
+              <span class="fact-label">Format</span>
+              <strong>Half-day · In person</strong>
+            </div>
+            <div>
+              <span class="fact-label">Room</span>
+              <strong>TBD</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="notice" aria-label="Workshop announcement">
+      <div class="container notice-inner">
+        <strong>Submissions are non-archival.</strong>
+        <span>We welcome short papers, position papers, work in progress, negative results, benchmark and dataset proposals, system descriptions, and live demo submissions.</span>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="overview">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">Overview</p>
+          <h2>Why physical world modeling?</h2>
+        </div>
+        <div class="rich-text">
+          <p>
+            World models for embodied agents are advancing through video prediction, 3D and 4D scene representation, and robot-specific action-conditioned modeling. Manipulation, however, requires more than visual appearance or geometry: robots must estimate how the world responds to contact, force, motion, material properties, articulation, stability, and uncertainty.
+          </p>
+          <p>
+            This workshop brings together researchers in robot learning, manipulation, computer vision, graphics, simulation, physical reasoning, multimodal learning, and foundation models to clarify what physically grounded world models should represent, how they should be built at scale, and how they should be evaluated through executable robot behavior.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad section-muted" id="questions">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">Core challenges</p>
+          <h2>Research questions</h2>
+          <p>Physical world modeling sits between visual prediction, spatial reconstruction, simulation, and robot control. The workshop centers on three connected questions.</p>
+        </div>
+        <div class="cards three">
+          <article class="card challenge-card">
+            <span class="card-index">01</span>
+            <h3>Representation</h3>
+            <p>What is a physical world model? What variables should it encode beyond images and 3D geometry so that an embodied agent can predict, plan, adapt, and act?</p>
+            <ul class="tag-list">
+              <li>Contact</li><li>Mass</li><li>Friction</li><li>Stability</li><li>Affordance</li><li>Uncertainty</li>
+            </ul>
+          </article>
+          <article class="card challenge-card">
+            <span class="card-index">02</span>
+            <h3>Construction</h3>
+            <p>How can unstructured physical observations from cameras, robot logs, human videos, and simulators become robot-usable world state at scale?</p>
+            <ul class="tag-list">
+              <li>3D reconstruction</li><li>Gaussian scenes</li><li>Digital twins</li><li>Real-to-sim-to-real</li>
+            </ul>
+          </article>
+          <article class="card challenge-card">
+            <span class="card-index">03</span>
+            <h3>Evaluation</h3>
+            <p>How should models be tested when the goal is not only visual plausibility, but reliable physical observations, action feasibility, and successful real-world manipulation?</p>
+            <ul class="tag-list">
+              <li>Benchmarks</li><li>Demos</li><li>Policy rollouts</li><li>Robot behavior</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="topics">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Topics of interest</p>
+          <h2>Contributions we encourage</h2>
+        </div>
+        <div class="topic-grid">
+          <div class="topic"><span></span>Physical state representation for world models</div>
+          <div class="topic"><span></span>Action-conditioned prediction, planning, and control</div>
+          <div class="topic"><span></span>Contact-rich manipulation, tool use, dexterity, and humanoids</div>
+          <div class="topic"><span></span>Multimodal sensing: RGB-D, tactile, force/torque, proprioception, audio</div>
+          <div class="topic"><span></span>3D/4D reconstruction, scene representations, and object-centric models</div>
+          <div class="topic"><span></span>Differentiable simulation, digital twins, real-to-sim, and sim-to-real</div>
+          <div class="topic"><span></span>Vision-language-action systems and multimodal foundation models</div>
+          <div class="topic"><span></span>Embodied datasets, physical reasoning benchmarks, and evaluation protocols</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad section-muted" id="cfp">
+      <div class="container two-col gap-large">
+        <div>
+          <p class="section-kicker">Call for papers</p>
+          <h2>Submission tracks</h2>
+          <p class="section-note">Submission portal, deadlines, and formatting details will be updated after final workshop scheduling.</p>
+          <div class="button-row">
+            <a class="button button-primary disabled" aria-disabled="true" href="#cfp">OpenReview TBD</a>
+            <a class="button button-secondary" href="https://www.corl.org/">CoRL 2026</a>
+          </div>
+        </div>
+        <div class="submission-stack">
+          <article class="submission-card">
+            <h3>Poster track</h3>
+            <p>Short papers, position papers, work-in-progress papers, negative results, benchmark or dataset proposals, and research papers on physical world modeling for embodied manipulation.</p>
+            <dl>
+              <div><dt>Suggested length</dt><dd>4 pages or 8 pages + references</dd></div>
+              <div><dt>Presentation</dt><dd>Poster session; selected papers receive short oral talks</dd></div>
+            </dl>
+          </article>
+          <article class="submission-card">
+            <h3>Demo track</h3>
+            <p>Physical robot demos, executable world-model prototypes, multimodal sensing systems, manipulation benchmarks, real-to-sim-to-real examples, and interactive visualizations.</p>
+            <dl>
+              <div><dt>Suggested format</dt><dd>System or demo description</dd></div>
+              <div><dt>Presentation</dt><dd>Parallel demo session; selected demos receive short oral talks</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+      <div class="container dates-wrap">
+        <h3>Important dates</h3>
+        <div class="dates-grid" role="list">
+          <div role="listitem"><span>Submission portal</span><strong>TBD</strong></div>
+          <div role="listitem"><span>Submission deadline</span><strong>TBD</strong></div>
+          <div role="listitem"><span>Notification</span><strong>TBD</strong></div>
+          <div role="listitem"><span>Workshop</span><strong>Nov 9, 2026</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="schedule">
+      <div class="container two-col gap-large">
+        <div>
+          <p class="section-kicker">Program</p>
+          <h2>Tentative half-day schedule</h2>
+          <p class="section-note">Exact times and room assignment are TBD. The format emphasizes invited talks, contributed spotlight presentations, posters, live demos, coffee-break interaction, and community discussion.</p>
+        </div>
+        <ol class="timeline">
+          <li><time>00:00</time><div><strong>Opening remarks</strong><span>Workshop motivation and community goals.</span></div></li>
+          <li><time>00:10</time><div><strong>Keynote 1</strong><span>Invited talk.</span></div></li>
+          <li><time>00:40</time><div><strong>Keynote 2</strong><span>Invited talk.</span></div></li>
+          <li><time>01:10</time><div><strong>Poster and demo spotlights</strong><span>Short oral presentations for selected submissions.</span></div></li>
+          <li><time>01:40</time><div><strong>Coffee break + poster/demo session</strong><span>Parallel poster and live demo interaction.</span></div></li>
+          <li><time>02:25</time><div><strong>Keynote 3</strong><span>Invited talk.</span></div></li>
+          <li><time>02:55</time><div><strong>Keynote 4</strong><span>Invited talk.</span></div></li>
+          <li><time>03:25</time><div><strong>Moderated panel</strong><span>Representation, scalable construction, and evaluation through executable robot behavior.</span></div></li>
+          <li><time>04:10</time><div><strong>Best Paper, Best Demo, and closing</strong><span>Community takeaways and next steps.</span></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-pad section-muted" id="speakers">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">Invited speakers</p>
+          <h2>Speakers and talk themes</h2>
+          <p>Profile photos are included for each invited speaker. Each portrait links to its public photo source.</p>
+        </div>
+        <div class="people-grid speakers-grid">
+          <article class="person-card speaker-card">
+            <figure class="portrait-wrap">
+              <a href="https://www.sainingxie.com/" rel="noopener" aria-label="Open Saining Xie profile">
+                <img class="portrait" src="assets/people/saining-xie.jpg" alt="Portrait of Saining Xie" loading="lazy" />
+              </a>
+              <figcaption><a href="https://www.sainingxie.com/" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <div class="person-topline"><h3><a href="https://www.sainingxie.com/" rel="noopener">Saining Xie</a></h3><span class="status requested">Requested</span></div>
+              <p class="affiliation">AMI Labs &amp; NYU</p>
+              <p class="talk-title">World models for embodied intelligence: toward systems grounded in continuous sensory experience and real-world interaction.</p>
+              <div class="person-links">
+                <a href="https://www.sainingxie.com/" rel="noopener">Profile</a>
+                <a href="mailto:saining.xie@nyu.edu">Email</a>
+              </div>
+            </div>
+          </article>
+          <article class="person-card speaker-card">
+            <figure class="portrait-wrap">
+              <a href="https://research.nvidia.com/person/ming-yu-liu" rel="noopener" aria-label="Open Ming-Yu Liu profile">
+                <img class="portrait" src="assets/people/ming-yu-liu.jpg" alt="Portrait of Ming-Yu Liu" loading="lazy" />
+              </a>
+              <figcaption><a href="https://research.nvidia.com/person/ming-yu-liu" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <div class="person-topline"><h3><a href="https://research.nvidia.com/person/ming-yu-liu" rel="noopener">Ming-Yu Liu</a></h3><span class="status confirmed">Committed</span></div>
+              <p class="affiliation">NVIDIA</p>
+              <p class="talk-title">Omnimodal World Models for Physical AI.</p>
+              <div class="person-links">
+                <a href="https://research.nvidia.com/person/ming-yu-liu" rel="noopener">Profile</a>
+                <a href="mailto:mingyul@nvidia.com">Email</a>
+              </div>
+            </div>
+          </article>
+          <article class="person-card speaker-card">
+            <figure class="portrait-wrap">
+              <a href="https://h2t.iar.kit.edu/tamim-asfour.php" rel="noopener" aria-label="Open Tamim Asfour profile">
+                <img class="portrait" src="assets/people/tamim-asfour.jpg" alt="Portrait of Tamim Asfour" loading="lazy" />
+              </a>
+              <figcaption><a href="https://h2t.iar.kit.edu/tamim-asfour.php" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <div class="person-topline"><h3><a href="https://h2t.iar.kit.edu/tamim-asfour.php" rel="noopener">Tamim Asfour</a></h3><span class="status confirmed">Committed</span></div>
+              <p class="affiliation">KIT</p>
+              <p class="talk-title">Developing humanoid systems that combine perception, manipulation, learning, and human–robot interaction to operate in complex real-world environments.</p>
+              <div class="person-links">
+                <a href="https://h2t.iar.kit.edu/tamim-asfour.php" rel="noopener">Profile</a>
+                <a href="mailto:asfour@kit.edu">Email</a>
+              </div>
+            </div>
+          </article>
+          <article class="person-card speaker-card">
+            <figure class="portrait-wrap">
+              <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/li-manling.html" rel="noopener" aria-label="Open Manling Li profile">
+                <img class="portrait" src="assets/people/manling-li.jpg" alt="Portrait of Manling Li" loading="lazy" />
+              </a>
+              <figcaption><a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/li-manling.html" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <div class="person-topline"><h3><a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/li-manling.html" rel="noopener">Manling Li</a></h3><span class="status confirmed">Committed</span></div>
+              <p class="affiliation">Northwestern University</p>
+              <p class="talk-title">Multimodal embodied agents: connecting language, vision, and action for grounded reasoning, physical-world understanding, and interactive planning.</p>
+              <div class="person-links">
+                <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/li-manling.html" rel="noopener">Profile</a>
+                <a href="mailto:manling.li@northwestern.edu">Email</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="organizers">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="section-kicker">Organizers</p>
+          <h2>Organizing committee</h2>
+          <p>Researchers across robot learning, manipulation, 3D vision, embodied AI, simulation, and foundation models. Each organizer card includes a locally optimized portrait and a link to the public source page.</p>
+        </div>
+        <div class="organizer-grid">
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://insait.ai/runyi-yang/" rel="noopener" aria-label="Open Runyi Yang profile">
+                <img class="portrait" src="assets/people/runyi-yang.jpg" alt="Portrait of Runyi Yang" loading="lazy" />
+              </a>
+              <figcaption><a href="https://insait.ai/runyi-yang/" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://insait.ai/runyi-yang/" rel="noopener">Runyi Yang</a></h3>
+              <p>INSAIT · PhD student</p>
+              <div class="person-links compact">
+                <a href="mailto:runyi.yang@insait.ai">Email</a>
+                <a href="https://insait.ai/runyi-yang/" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://insait.ai/giuliano-albanese/" rel="noopener" aria-label="Open Giuliano Albanese profile">
+                <img class="portrait" src="assets/people/giuliano-albanese.jpg" alt="Portrait of Giuliano Albanese" loading="lazy" />
+              </a>
+              <figcaption><a href="https://insait.ai/giuliano-albanese/" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://insait.ai/giuliano-albanese/" rel="noopener">Giuliano Albanese</a></h3>
+              <p>INSAIT · PhD student</p>
+              <div class="person-links compact">
+                <a href="mailto:giuliano.albanese@insait.ai">Email</a>
+                <a href="https://insait.ai/giuliano-albanese/" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://cvg.ethz.ch/our_team" rel="noopener" aria-label="Open Nicole Damblon profile">
+                <img class="portrait" src="assets/people/nicole-damblon.jpg" alt="Portrait of Nicole Damblon" loading="lazy" />
+              </a>
+              <figcaption><a href="https://cvg.ethz.ch/our_team" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://cvg.ethz.ch/our_team" rel="noopener">Nicole Damblon</a></h3>
+              <p>ETH Zurich · PhD student</p>
+              <div class="person-links compact">
+                <a href="mailto:nicole.damblon@ai.ethz.ch">Email</a>
+                <a href="https://cvg.ethz.ch/our_team" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://insait.ai/dr-ing-kunyu-peng/" rel="noopener" aria-label="Open Kunyu Peng profile">
+                <img class="portrait" src="assets/people/kunyu-peng.jpg" alt="Portrait of Kunyu Peng" loading="lazy" />
+              </a>
+              <figcaption><a href="https://insait.ai/dr-ing-kunyu-peng/" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://insait.ai/dr-ing-kunyu-peng/" rel="noopener">Kunyu Peng</a></h3>
+              <p>KIT · Postdoc</p>
+              <div class="person-links compact">
+                <a href="mailto:kunyu.peng@kit.edu">Email</a>
+                <a href="https://insait.ai/dr-ing-kunyu-peng/" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://research.nvidia.com/person/xin-kong" rel="noopener" aria-label="Open Xin Kong profile">
+                <img class="portrait" src="assets/people/xin-kong.jpg" alt="Portrait of Xin Kong" loading="lazy" />
+              </a>
+              <figcaption><a href="https://research.nvidia.com/person/xin-kong" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://research.nvidia.com/person/xin-kong" rel="noopener">Xin Kong</a></h3>
+              <p>NVIDIA · Research Scientist</p>
+              <div class="person-links compact">
+                <a href="mailto:x.kong21@imperial.ac.uk">Email</a>
+                <a href="https://research.nvidia.com/person/xin-kong" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://www.access.kit.edu/english/287_1072.php" rel="noopener" aria-label="Open Rainer Stiefelhagen profile">
+                <img class="portrait" src="assets/people/rainer-stiefelhagen.jpg" alt="Portrait of Rainer Stiefelhagen" loading="lazy" />
+              </a>
+              <figcaption><a href="https://www.access.kit.edu/english/287_1072.php" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://www.access.kit.edu/english/287_1072.php" rel="noopener">Rainer Stiefelhagen</a></h3>
+              <p>KIT · Professor</p>
+              <div class="person-links compact">
+                <a href="mailto:rainer.stiefelhagen@kit.edu">Email</a>
+                <a href="https://www.access.kit.edu/english/287_1072.php" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Yiming_Li.htm" rel="noopener" aria-label="Open Yiming Li profile">
+                <img class="portrait" src="assets/people/yiming-li.jpg" alt="Portrait of Yiming Li" loading="lazy" />
+              </a>
+              <figcaption><a href="https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Yiming_Li.htm" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Yiming_Li.htm" rel="noopener">Yiming Li</a></h3>
+              <p>THU · Assistant Professor</p>
+              <div class="person-links compact">
+                <a href="mailto:yimingli9702@gmail.com">Email</a>
+                <a href="https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Yiming_Li.htm" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://viterbi.usc.edu/directory/faculty/Seita/Daniel" rel="noopener" aria-label="Open Daniel Seita profile">
+                <img class="portrait" src="assets/people/daniel-seita.jpg" alt="Portrait of Daniel Seita" loading="lazy" />
+              </a>
+              <figcaption><a href="https://viterbi.usc.edu/directory/faculty/Seita/Daniel" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://viterbi.usc.edu/directory/faculty/Seita/Daniel" rel="noopener">Daniel Seita</a></h3>
+              <p>USC · Assistant Professor</p>
+              <div class="person-links compact">
+                <a href="mailto:seita@usc.edu">Email</a>
+                <a href="https://viterbi.usc.edu/directory/faculty/Seita/Daniel" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://insait.ai/dr-danda-paudel/" rel="noopener" aria-label="Open Danda Pani Paudel profile">
+                <img class="portrait" src="assets/people/danda-pani-paudel.jpg" alt="Portrait of Danda Pani Paudel" loading="lazy" />
+              </a>
+              <figcaption><a href="https://insait.ai/dr-danda-paudel/" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://insait.ai/dr-danda-paudel/" rel="noopener">Danda Pani Paudel</a></h3>
+              <p>INSAIT · Assistant Professor</p>
+              <div class="person-links compact">
+                <a href="mailto:danda.paudel@insait.ai">Email</a>
+                <a href="https://insait.ai/dr-danda-paudel/" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://people.inf.ethz.ch/marc.pollefeys/" rel="noopener" aria-label="Open Marc Pollefeys profile">
+                <img class="portrait" src="assets/people/marc-pollefeys.jpg" alt="Portrait of Marc Pollefeys" loading="lazy" />
+              </a>
+              <figcaption><a href="https://people.inf.ethz.ch/marc.pollefeys/" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://people.inf.ethz.ch/marc.pollefeys/" rel="noopener">Marc Pollefeys</a></h3>
+              <p>ETH Zurich · Professor</p>
+              <div class="person-links compact">
+                <a href="mailto:marc.pollefeys@inf.ethz.ch">Email</a>
+                <a href="https://people.inf.ethz.ch/marc.pollefeys/" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+          <article class="organizer">
+            <figure class="portrait-wrap">
+              <a href="https://insait.ai/prof-luc-van-gool/" rel="noopener" aria-label="Open Luc Van Gool profile">
+                <img class="portrait" src="assets/people/luc-van-gool.jpg" alt="Portrait of Luc Van Gool" loading="lazy" />
+              </a>
+              <figcaption><a href="https://insait.ai/prof-luc-van-gool/" rel="noopener">Photo source</a></figcaption>
+            </figure>
+            <div class="person-body">
+              <h3><a href="https://insait.ai/prof-luc-van-gool/" rel="noopener">Luc Van Gool</a></h3>
+              <p>INSAIT · Professor</p>
+              <div class="person-links compact">
+                <a href="mailto:luc.vangool@insait.ai">Email</a>
+                <a href="https://insait.ai/prof-luc-van-gool/" rel="noopener">Profile</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad section-muted" id="participation">
+      <div class="container two-col gap-large">
+        <div>
+          <p class="section-kicker">Participation</p>
+          <h2>Interactive, broad, and community-centered</h2>
+        </div>
+        <div class="rich-text">
+          <p>
+            The workshop is designed for active exchange rather than a sequence of talks. Poster and demo tracks provide multiple ways for students, early-career researchers, system builders, and interdisciplinary contributors to participate.
+          </p>
+          <p>
+            The program will aim for balanced representation across career stage, geography, institution type, research background, and sector. Selected submissions from both poster and demo tracks will be considered for oral spotlights, Best Paper, and Best Demo recognition.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="accepted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Accepted papers</p>
+          <h2>To be announced</h2>
+          <p>Accepted papers, demos, and spotlight presentations will be posted here after review.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Questions about the workshop?</h2>
+          <p>For submissions, demos, sponsorship, or logistics, please contact the corresponding organizer.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:runyi.yang@insait.ai">runyi.yang@insait.ai</a>
+          <a class="button button-secondary" href="https://www.corl.org/contributions/call-for-workshops">CoRL workshop info</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 PhysicalWM Workshop Organizers.</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
