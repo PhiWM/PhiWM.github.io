@@ -4,7 +4,6 @@ Each local portrait image in this folder is an optimized copy generated from the
 
 | Person | Local image | Source/profile page | Original image URL |
 |---|---|---|---|
-| Saining Xie | assets/people/saining-xie.jpg | https://www.sainingxie.com/ | https://www.sainingxie.com/imgs/profile_nana_banana.png |
 | Ming-Yu Liu | assets/people/ming-yu-liu.jpg | https://research.nvidia.com/person/ming-yu-liu | https://research.nvidia.com/sites/default/files/person/mingyu_2018.jpg |
 | Tamim Asfour | assets/people/tamim-asfour.jpg | https://h2t.iar.kit.edu/tamim-asfour.php | https://h2t.iar.kit.edu/img/tamim.asfour.JPG |
 | Manling Li | assets/people/manling-li.jpg | https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/li-manling.html | https://www.mccormick.northwestern.edu/images/research-and-faculty/directory/li-manling.jpg |
