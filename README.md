@@ -8,7 +8,7 @@ Static single-page website for **Physical World Modeling for Robot Manipulation*
 - `CORL2026.html` — same page, matching the proposed URL path `https://phiwm.github.io/CORL2026.html`.
 - `assets/styles.css` — all styling.
 - `assets/script.js` — mobile menu and active section highlighting.
-- `assets/hero-physicalwm-lab.png` — generated bitmap hero banner for the workshop page.
+- `assets/hero-physicalwm-grid.png` — generated six-panel bitmap hero banner for the workshop page.
 - `assets/hero-physicalwm.svg` — original abstract hero graphic, retained as a fallback/source asset.
 - `assets/favicon.svg` — site icon.
 - `assets/people/*.jpg` — optimized local profile portraits for all invited speakers and organizers.

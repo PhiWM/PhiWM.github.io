@@ -206,7 +206,7 @@ h3 {
   color: var(--white);
   background:
     linear-gradient(rgba(12, 20, 28, 0.55), rgba(12, 20, 28, 0.55)),
-    url("hero-physicalwm-lab.png") center / cover no-repeat,
+    url("hero-physicalwm-grid.png") center / cover no-repeat,
     #17212b;
 }
 
