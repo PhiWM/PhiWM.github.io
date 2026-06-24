@@ -11,7 +11,6 @@ Static single-page website for **Physical World Modeling for Robot Manipulation*
 - `assets/hero-physicalwm-lab.png` — generated bitmap hero banner for the workshop page.
 - `assets/hero-physicalwm.svg` — original abstract hero graphic, retained as a fallback/source asset.
 - `assets/favicon.svg` — site icon.
-- `assets/physicalwm-corl2026-proposal.pdf` — bundled proposal PDF.
 - `assets/people/*.jpg` — optimized local profile portraits for all invited speakers and organizers.
 - `assets/people/SOURCES.md` — source/profile page and original image URL for each portrait.
 
